@@ -11,7 +11,7 @@ int main(){
 	while(1){
 		available = serialDataAvail(handle);
 		cout<<available<<endl;
-		sleep(1);
+		Sleep(1);
 	}
 	return 0;
 }
