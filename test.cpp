@@ -1,6 +1,7 @@
 #include<iostream>
 #include<iomanip>
 #include<wiringSerial.h>
+#include<unistd.h>
 using namespace std;
 
 int main(){
@@ -10,6 +11,7 @@ int main(){
 	while(1){
 		available = serialDataAvail(handle);
 		cout<<available<<endl;
+		sleep(1);
 	}
 	return 0;
 }
